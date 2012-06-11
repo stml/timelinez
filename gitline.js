@@ -4,7 +4,7 @@ var prevurl = '';
 var updateinterval = '1000'
 
 $(document).ready(function() {
-	getTimeline();
+	$('#container').prepend('<p>Loading...</p>');
 	setInterval("getTimeline()", updateinterval);
 	});
 	
@@ -17,13 +17,19 @@ function getTimeline() {
 		var url = "https://github.com/timeline.json?callback=?";
 		}
 	$.getJSON(url, function(data) {
-		printEvent(data);
+		printEvent(data[0]);
   		});
 	}
 	
-function printEvent(data) {
-	if (data[0].url != prevurl) {
-		$('#container').prepend('<p>'+data[0].url+'</p>');
-		prevurl = data[0].url;
+// Github Types:
+// PushEvent: 	
+	
+function printEvent(event) {
+	console.log(event.type);
+	if (event.url != prevurl) {
+		if (event.type == 'PushEvent') {
+			$('#container').prepend('<p id="'+event.payload.head+'"><strong>'+event.payload.head+'</strong>: '+event.actor_attributes.name+' (<a href="https://github.com/'+event.actor_attributes.login+'">'+event.actor_attributes.login+'</a>) pushed to <a href="'+event.repository.url+'">'+event.repository.name+'</a> at '+event.created_at+'</p>');
+			}
+		prevurl = event.url;
 		}
 	}
