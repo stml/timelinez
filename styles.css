@@ -1,5 +1,20 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+#header {
+	background: #ccf;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	}
+h1 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+	}
+#container {
+	margin: 10px 20px;
 	}
 div.commit {
 	margin-bottom: 10px;
