@@ -1,0 +1,31 @@
+{
+    "commit": {
+        "modified": [
+            {
+                "diff": "@@ -444,13 +444,13 @@ a.add {\n \n #sector-navigation li a {\n   background-image: url(<%= asset_path \"expand-collapse-arrow.png\" %>);\n-  background-position: 0 8px;\n+  background-position: 0 5px;\n   background-repeat: no-repeat;\n   padding-left: 1em;\n }\n \n #sector-navigation li.open > a {\n-  background-position: 0 -83px;\n+  background-position: 0 -86px;\n }\n \n #sector-navigation li a.add {",
+                "filename": "app/assets/stylesheets/licence-finder.css.erb"
+            }
+        ],
+        "parents": [
+            {
+                "id": "ea4dcc00664c1e5fdd7f084d024cf8ca889b5778"
+            }
+        ],
+        "author": {
+            "name": "James Weiner",
+            "login": "jamesweiner",
+            "email": "james.weiner@digital.cabinet-office.gov.uk"
+        },
+        "url": "/alphagov/licence-finder/commit/1446082f9f0e0e10f372e13b20d7907fed6dc612",
+        "id": "1446082f9f0e0e10f372e13b20d7907fed6dc612",
+        "committed_date": "2012-06-12T08:48:35-07:00",
+        "authored_date": "2012-06-12T08:48:35-07:00",
+        "message": "Re-positioned expand-collapse arrows",
+        "tree": "5b1d60038034c24003f38d93c9ece9d32ec7074d",
+        "committer": {
+            "name": "James Weiner",
+            "login": "jamesweiner",
+            "email": "james.weiner@digital.cabinet-office.gov.uk"
+        }
+    }
+}
