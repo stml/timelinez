@@ -1,0 +1,21 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+div.commit {
+	margin-bottom: 10px;
+	background: #eee;
+	}
+p {
+	margin: 0px;
+	}
+p.event {
+	background: #afa;
+	padding: 10px 20px;
+	}
+p.diff {
+	font-family: Courier, monospace;
+	font-size: 12px;
+	background: #eee;
+	padding: 8px 20px;
+	border-bottom: 1px solid #333;
+	}
